@@ -3,7 +3,7 @@ Upload Tensorboard outputs and Hydra configs to [Neptune.ai](https://neptune.ai/
 # Setup Neptune.ai Account
 
 - Sign up for a Individual or Academic plan.
-  - The Neptune ID will be called Entity
+  - The Neptune ID will be called ENTITY
 - Create Neptune project name
   - As an example, `lightning-pose`
 - Copy NEPTUNE_API_TOKEN
@@ -28,7 +28,7 @@ echo $NEPTUNE_API_TOKEN
 
 ```bash
 cd outputs
-neptune tensorboard . --project sangkyulee/lightning-pose
+neptune tensorboard . --project ENTITY/lightning-pose
 ```
 
 # Hydra parameters for each Neptune Run
@@ -36,5 +36,5 @@ neptune tensorboard . --project sangkyulee/lightning-pose
 ```bash
 export PYTHONPATH=`pwd`/scripts
 cd outputs
-python ../scripts/tb_neptune/utils.py tb_neptune --project sangkyulee/lightning-pose 
+python ../scripts/tb_neptune/utils.py tb_neptune --project ENTITY/lightning-pose 
 ```
