@@ -14,6 +14,7 @@ install_requires = [
     "moviepy",
     "pandas",
     "pillow",
+    "pydantic",
     "pytest",
     "pytorch-lightning",
     "scikit-image",
